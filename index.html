@@ -3,7 +3,7 @@
 <head>
 <meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
 <meta name="description" content="Cognitive Vehicles LLC develops adaptive autonomy and modular underwater vehicle systems, including SIMPLR-AUV.">
-<meta name="theme-color" content="#07131f">
+<meta name="theme-color" content="#07131f">\n<link rel="icon" type="image/png" href="assets/gizmo-logo.png">
 <title>Cognitive Vehicles LLC | SIMPLR-AUV</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -23,19 +23,34 @@
   <div class="hero-copy">
     <p class="eyebrow">COGNITIVE VEHICLES LLC</p>
     <h1>Adaptive Autonomy<br><span>for the Undersea Domain</span></h1>
-    <p class="hero-lede">SIMPLR-AUV is a modular autonomous underwater vehicle architecture combining mission-oriented autonomy, interchangeable sensing payloads, and open systems engineering.</p>
+    <p class="hero-lede">SIMPLR-AUV combines modular underwater vehicle architecture, interchangeable mission payloads, and GIZMO mission orchestration to turn mission intent and sensed information into adaptive autonomous behavior.</p>
     <div class="hero-actions"><a class="button primary" href="#simplr">Explore SIMPLR-AUV</a><a class="button ghost" href="https://github.com/SCEngineer/simplr-auv" target="_blank" rel="noopener">View Open-Source Software</a></div>
     <div class="hero-metrics"><div><strong>Modular</strong><span>payload + software architecture</span></div><div><strong>Explainable</strong><span>deterministic mission decisions</span></div><div><strong>Adaptable</strong><span>sensor-driven mission behavior</span></div></div>
   </div>
   <div class="hero-visual">
-    <img src="assets/simplr-hero.svg" alt="Stylized SIMPLR-AUV technical silhouette">
-    <div class="callout c1"><span></span>PAYLOAD BAY</div><div class="callout c2"><span></span>MISSION COMPUTE</div><div class="callout c3"><span></span>PROPULSION</div>
+    <img class="vehicle-render" src="assets/simplr-vehicle.png" alt="SIMPLR-AUV vehicle exterior render">
   </div>
 </section>
 
 <section class="intro section" id="simplr">
   <div class="section-heading"><p class="eyebrow">SIMPLR-AUV</p><h2>Subsurface Integrated Mission Platform<br>for Low-Complexity Robotics</h2></div>
   <div class="intro-copy"><p>SIMPLR-AUV is designed as a mission platform rather than a single-purpose vehicle. Mechanical, electrical, payload, autonomy, and guidance interfaces are separated so new capabilities can be integrated without redesigning the entire system.</p><p>The architecture supports rapid experimentation, mission-specific sensing, and increasingly adaptive autonomy while keeping the execution stack inspectable and testable.</p></div>
+</section>
+
+<section class="vehicle-showcase section" aria-label="SIMPLR-AUV vehicle architecture">
+  <div class="vehicle-copy">
+    <p class="eyebrow">THE VEHICLE</p>
+    <h2>A real platform architecture, not a generic autonomy demo.</h2>
+    <p>SIMPLR-AUV uses a free-flooding outer hull around three Water Tight Cylinders. The physical architecture separates mission sensing, vehicle management, and energy while preserving a common network and power backbone.</p>
+    <div class="vehicle-facts">
+      <div><strong>3 WTCs</strong><span>mission sensing · vehicle management · energy</span></div>
+      <div><strong>Open payload bay</strong><span>mission hardware changes without rewriting flight control</span></div>
+      <div><strong>Common backbone</strong><span>Ethernet, power, and controlled mechanical interfaces</span></div>
+    </div>
+  </div>
+  <div class="cutaway-frame">
+    <img src="assets/simplr-cutaway.png" alt="SIMPLR-AUV transparent cutaway showing internal Water Tight Cylinders and vehicle systems">
+  </div>
 </section>
 
 <section class="capabilities section">
@@ -46,15 +61,34 @@
 </section>
 
 <section class="gizmo section" id="autonomy">
-  <div class="gizmo-copy"><p class="eyebrow">GIZMO MISSION ORCHESTRATION</p><h2>From mission intent<br>to safe adaptive behavior.</h2><p>GIZMO provides a deterministic orchestration layer above the vehicle's existing guidance and control stack. It evaluates mission context and selects among eligible autonomous behaviors while preserving independent safety authority.</p><p class="note">Public description intentionally focuses on capability and architecture rather than implementation-specific scoring, eligibility, or arbitration logic.</p></div>
+  <div class="gizmo-brand">
+    <img src="assets/gizmo-logo.png" alt="GIZMO — Generalized Intelligent Zone-aware Mission Orchestration logo">
+  </div>
+  <div class="gizmo-copy">
+    <p class="eyebrow">GIZMO MISSION ORCHESTRATION</p>
+    <h2>Mission intent becomes adaptive behavior.</h2>
+    <p>GIZMO is the mission-orchestration layer within SIMPLR-AUV. It evaluates mission objectives, operating zones, vehicle state, observations, and available capabilities to determine when the vehicle should continue its nominal plan, intervene, resume, or complete an objective.</p>
+    <div class="gizmo-principles">
+      <div><strong>Deterministic</strong><span>Repeatable decisions without opaque mission logic.</span></div>
+      <div><strong>Explainable</strong><span>Every intervention can be logged, reviewed, and replayed.</span></div>
+      <div><strong>Bounded</strong><span>Independent vehicle-safety authority remains outside mission utility.</span></div>
+    </div>
+    <p class="note">Public material intentionally describes capability and architecture without disclosing implementation-specific scoring, eligibility, or arbitration logic.</p>
+  </div>
+</section>
+
+<section class="orchestration section" aria-label="GIZMO mission orchestration flow">
+  <div class="section-heading narrow">
+    <p class="eyebrow">MISSION REASONING</p>
+    <h2>Observe. Decide. Act. Reassess.</h2>
+  </div>
   <div class="flow">
-    <div class="flow-node"><small>01</small><strong>Mission Objectives</strong></div><div class="flow-arrow">↓</div>
-    <div class="flow-node"><small>02</small><strong>Operating Zones + Policy</strong></div><div class="flow-arrow">↓</div>
-    <div class="flow-node"><small>03</small><strong>Vehicle + Payload Capabilities</strong></div><div class="flow-arrow">↓</div>
-    <div class="flow-node"><small>04</small><strong>Sensor Observations</strong></div><div class="flow-arrow">↓</div>
-    <div class="flow-node highlight"><small>G</small><strong>GIZMO</strong><span>Mission Orchestration</span></div><div class="flow-arrow">↓</div>
-    <div class="flow-node"><small>05</small><strong>Adaptive Mission Behavior</strong></div><div class="flow-arrow">↓</div>
-    <div class="flow-node"><small>06</small><strong>Safe Vehicle Execution</strong></div>
+    <div class="flow-node"><small>01</small><strong>Mission Objectives</strong></div><div class="flow-arrow">→</div>
+    <div class="flow-node"><small>02</small><strong>Operating Zones + Policy</strong></div><div class="flow-arrow">→</div>
+    <div class="flow-node"><small>03</small><strong>Capabilities + Observations</strong></div><div class="flow-arrow">→</div>
+    <div class="flow-node highlight"><small>G</small><strong>GIZMO</strong><span>Mission Orchestration</span></div><div class="flow-arrow">→</div>
+    <div class="flow-node"><small>04</small><strong>Adaptive Mission Behavior</strong></div><div class="flow-arrow">→</div>
+    <div class="flow-node"><small>05</small><strong>Safe Vehicle Execution</strong></div>
   </div>
 </section>
 
@@ -66,6 +100,18 @@
     <div><span>Vehicle Layer</span><strong>Navigation · Control · Safety</strong></div>
     <div><span>Platform Layer</span><strong>HAL · Actuators · Vehicle Sensors</strong></div>
     <div><span>Payload Layer</span><strong>RF · Acoustic · Optical · Mission Sensors</strong></div>
+  </div>
+</section>
+
+<section class="operations section">
+  <div class="section-heading narrow">
+    <p class="eyebrow">SYSTEM IN OPERATION</p>
+    <h2>One architecture from mission planning to post-mission evidence.</h2>
+    <p>SIMPLR-AUV is supported by a browser-delivered mission environment for planning, vehicle operations, payload operations, and analysis.</p>
+  </div>
+  <div class="operations-grid">
+    <figure><img src="assets/mission-portal.png" alt="SIMPLR-AUV Mission Portal"><figcaption>Cloud mission environment</figcaption></figure>
+    <figure><img src="assets/simplr-ov1.png" alt="SIMPLR-AUV operational view"><figcaption>Operational concept</figcaption></figure>
   </div>
 </section>
 

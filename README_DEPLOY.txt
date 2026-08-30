@@ -6,3 +6,17 @@ SIMPLR-AUV WEBSITE REPLACEMENT — REV A
 4. Upload all files to the web document root if your hosting plan supports static files.
 5. Ensure HTTPS is enabled and choose one canonical hostname (simplr-auv.com or www.simplr-auv.com).
 6. If GoDaddy Website Builder does not allow raw file upload, use this package as the layout/copy baseline in the builder.
+
+REV B CHANGES
+-------------
+- Integrated the approved GIZMO logo into the Autonomy section.
+- Added branded GIZMO design principles and orchestration flow.
+- Updated hero copy to connect SIMPLR-AUV and GIZMO.
+- Added GIZMO logo as temporary favicon.
+
+REV C CHANGES
+-------------
+- Replaced conceptual hero artwork with the actual SIMPLR-AUV exterior render from the technical briefing.
+- Added the real transparent cutaway showing the three-WTC architecture.
+- Added Mission Portal and operational-concept imagery from the briefing.
+- Preserved the GIZMO Rev B branding and mission-orchestration section.
