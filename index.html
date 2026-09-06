@@ -1,24 +1,115 @@
 <!doctype html>
 <html lang="en">
 <head>
-<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
-<meta name="description" content="Cognitive Vehicles LLC develops adaptive autonomy, modular underwater vehicle architectures, and mission systems including SIMPLR-AUV and GIZMO mission orchestration.">
-<meta name="theme-color" content="#07131f">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="description" content="Cognitive Vehicles LLC develops modular autonomous underwater systems, mission orchestration, configuration tools, and browser-delivered mission operations around SIMPLR-AUV.">
+<meta name="theme-color" content="#06131f">
 <link rel="icon" type="image/webp" href="cognitive-vehicles-mark.webp">
-<meta property="og:type" content="website"><meta property="og:title" content="Cognitive Vehicles LLC | SIMPLR-AUV"><meta property="og:description" content="Adaptive autonomy and modular undersea vehicle architecture for rapidly reconfigurable missions."><meta property="og:image" content="cognitive-vehicles-logo.webp"><meta property="og:url" content="https://simplr-auv.com/">
-<title>Cognitive Vehicles LLC | SIMPLR-AUV</title><link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet"><link rel="stylesheet" href="styles.css">
-</head><body>
-<header class="site-header"><a class="brand" href="#top" aria-label="Cognitive Vehicles LLC home"><img class="brand-logo" src="cognitive-vehicles-logo.webp" decoding="async" alt="Cognitive Vehicles LLC — Small Vehicles. Big Autonomy."></a><button class="nav-toggle" aria-expanded="false">Menu</button><nav class="nav"><a href="#simplr">SIMPLR-AUV</a><a href="#autonomy">Autonomy</a><a href="#architecture">Open Architecture</a><a href="#about">About</a><a class="nav-cta" href="#contact">Contact</a></nav></header>
+<meta property="og:type" content="website">
+<meta property="og:title" content="Cognitive Vehicles LLC | SIMPLR-AUV">
+<meta property="og:description" content="Software-defined underwater capability: plan, configure, validate, deploy, adapt, and analyze.">
+<meta property="og:image" content="xray.webp">
+<meta property="og:url" content="https://simplr-auv.com/">
+<title>Cognitive Vehicles LLC | SIMPLR-AUV</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500;600&family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<header class="site-header">
+  <a class="brand" href="#top" aria-label="Cognitive Vehicles LLC home"><img src="cognitive-vehicles-logo.webp" alt="Cognitive Vehicles LLC"></a>
+  <button class="nav-toggle" aria-expanded="false" aria-label="Toggle navigation">Menu</button>
+  <nav class="nav">
+    <a href="#simplr">SIMPLR-AUV</a><a href="#gizmo">GIZMO</a><a href="#compilr">COMPILR</a><a href="#systems">Mission Systems</a><a href="#technology">Technology</a><a href="#company">Company</a><a class="nav-cta" href="#contact">Contact</a>
+  </nav>
+</header>
+
 <main id="top">
-<section class="hero"><div class="hero-grid"></div><div class="hero-glow"></div><div class="hero-copy"><p class="eyebrow">COGNITIVE VEHICLES LLC</p><h1>Adaptive Autonomy<br><span>for the Undersea Domain</span></h1><p class="hero-lede">SIMPLR-AUV combines a modular underwater vehicle architecture, interchangeable mission payloads, and GIZMO mission orchestration to turn mission intent and sensed information into adaptive autonomous behavior.</p><div class="hero-actions"><a class="button primary" href="#simplr">Explore SIMPLR-AUV</a></div><div class="hero-metrics"><div><strong>Modular</strong><span>payload + software architecture</span></div><div><strong>Explainable</strong><span>deterministic mission decisions</span></div><div><strong>Adaptable</strong><span>sensor-driven mission behavior</span></div></div></div><div class="hero-visual"><img class="vehicle-render" src="simplr-vehicle.png" decoding="async" fetchpriority="high" alt="SIMPLR-AUV vehicle exterior render"></div></section>
-<section class="intro section" id="simplr"><div class="section-heading"><p class="eyebrow">SIMPLR-AUV</p><h2>Subsurface Integrated Mission Platform<br>for Low-Complexity Robotics</h2></div><div class="intro-copy"><p>SIMPLR-AUV is designed as a mission platform rather than a single-purpose vehicle. Mechanical, electrical, payload, autonomy, and guidance interfaces are separated so new capabilities can be integrated without redesigning the entire system.</p><p>The architecture supports rapid experimentation, mission-specific sensing, and increasingly adaptive autonomy while keeping the execution stack inspectable and testable.</p></div></section>
-<section class="status-strip" aria-label="SIMPLR-AUV development status"><div><span>DEVELOPMENT STATUS</span><strong>Engineering baseline established · prototype vehicle hardware in development</strong></div><p>Public material describes the system architecture and development direction; performance claims will follow controlled test evidence.</p></section>
-<section class="vehicle-showcase section" aria-label="SIMPLR-AUV vehicle architecture"><div class="vehicle-copy"><p class="eyebrow">THE VEHICLE</p><h2>A purpose-built platform architecture for modular autonomy.</h2><p>SIMPLR-AUV uses a free-flooding outer hull around two watertight electronics cylinders, with a wet-mounted pressure-tolerant energy module. The physical architecture separates mission sensing, vehicle management, energy, and payload functions while preserving common power, network, and mechanical interfaces.</p><div class="vehicle-facts"><div><strong>2 WTCs + wet energy</strong><span>forward sensing and payload electronics · center vehicle management · pressure-tolerant battery</span></div><div><strong>Modular payload interfaces</strong><span>mission hardware can change without rebuilding the core vehicle-control stack</span></div><div><strong>Common backbone</strong><span>Ethernet, power, and controlled mechanical interfaces</span></div></div></div><div class="cutaway-frame"><img src="simplr-cutaway.png" loading="lazy" alt="SIMPLR-AUV transparent cutaway showing two watertight electronics cylinders, wet-mounted energy module, and vehicle systems"></div></section>
-<section class="capabilities section"><article class="cap-card"><span class="cap-num">01</span><h3>Adaptive Autonomy</h3><p>Mission behavior can change as objectives, operating zones, vehicle state, observations, and available capabilities change.</p></article><article class="cap-card"><span class="cap-num">02</span><h3>Open Architecture</h3><p>Modular interfaces support rapid integration of mission payloads, guidance behaviors, sensor processing, and vehicle services.</p></article><article class="cap-card"><span class="cap-num">03</span><h3>Multi-Modal Sensing</h3><p>Mission configurations can incorporate RF, passive acoustic, optical, navigation, and environmental sensing.</p></article><article class="cap-card"><span class="cap-num">04</span><h3>Low-Complexity Platform</h3><p>Software-defined capability and modular fabrication are emphasized over exquisite, tightly coupled vehicle hardware.</p></article></section>
-<section class="gizmo section" id="autonomy"><div class="gizmo-brand"><img src="gizmo-logo.png" loading="lazy" alt="GIZMO — Generalized Intelligent Zone-aware Mission Orchestration logo"></div><div class="gizmo-copy"><p class="eyebrow">GIZMO MISSION ORCHESTRATION</p><h2>Mission intent becomes adaptive behavior.</h2><p>GIZMO is the mission-orchestration layer within SIMPLR-AUV. It evaluates mission objectives, operating zones, vehicle state, observations, and available capabilities to determine when the vehicle should continue its nominal plan, intervene, resume, or complete an objective.</p><div class="gizmo-principles"><div><strong>Deterministic</strong><span>Repeatable decisions without opaque mission logic.</span></div><div><strong>Explainable</strong><span>Every intervention can be logged, reviewed, and replayed.</span></div><div><strong>Bounded</strong><span>Independent vehicle-safety authority remains outside mission utility.</span></div></div><p class="note">Public material intentionally describes capability and architecture without disclosing implementation-specific scoring, eligibility, or arbitration logic.</p></div></section>
-<section class="orchestration section" aria-label="GIZMO mission orchestration flow"><div class="section-heading narrow"><p class="eyebrow">MISSION REASONING</p><h2>Observe. Decide. Act. Reassess.</h2></div><div class="flow"><div class="flow-node"><small>01</small><strong>Mission Objectives</strong></div><div class="flow-arrow">→</div><div class="flow-node"><small>02</small><strong>Operating Zones + Policy</strong></div><div class="flow-arrow">→</div><div class="flow-node"><small>03</small><strong>Capabilities + Observations</strong></div><div class="flow-arrow">→</div><div class="flow-node highlight"><small>G</small><strong>GIZMO</strong><span>Mission Orchestration</span></div><div class="flow-arrow">→</div><div class="flow-node"><small>04</small><strong>Adaptive Mission Behavior</strong></div><div class="flow-arrow">→</div><div class="flow-node"><small>05</small><strong>Safe Vehicle Execution</strong></div></div></section>
-<section class="architecture section" id="architecture"><div class="section-heading narrow"><p class="eyebrow">OPEN SYSTEMS ENGINEERING</p><h2>Capability should be replaceable without rebuilding the vehicle.</h2><p>SIMPLR separates mission orchestration, guidance, vehicle control, hardware abstraction, and payload processing so each layer can evolve independently.</p></div><div class="stack"><div><span>Mission Layer</span><strong>Objectives · Zones · Policy · GIZMO</strong></div><div><span>Behavior Layer</span><strong>Guidance Plugins · Mission Tasks</strong></div><div><span>Vehicle Layer</span><strong>Navigation · Control · Safety</strong></div><div><span>Platform Layer</span><strong>HAL · Actuators · Vehicle Sensors</strong></div><div><span>Payload Layer</span><strong>RF · Acoustic · Optical · Mission Sensors</strong></div></div></section>
-<section class="operations section"><div class="section-heading narrow"><p class="eyebrow">SYSTEM IN OPERATION</p><h2>One architecture from mission planning to post-mission evidence.</h2><p>SIMPLR-AUV is supported by a browser-delivered mission environment for planning, vehicle operations, payload operations, and analysis.</p></div><div class="operations-grid"><figure><img src="mission-portal.png" loading="lazy" alt="SIMPLR-AUV browser-delivered Mission Portal interface"><figcaption>Cloud mission environment</figcaption></figure><figure><img src="simplr-ov1.png" loading="lazy" alt="SIMPLR-AUV operational concept view"><figcaption>Operational concept</figcaption></figure></div></section>
-<section class="about section" id="about"><div><p class="eyebrow">ABOUT COGNITIVE VEHICLES</p><h2>Autonomous systems built around mission reasoning.</h2></div><div><p>Cognitive Vehicles LLC develops autonomous vehicle architectures, mission software, sensing integration, and undersea robotic systems. SIMPLR-AUV is the company's principal development platform for modular autonomy, open mission interfaces, and rapidly reconfigurable undersea sensing.</p></div></section>
-<section class="contact section" id="contact"><div><p class="eyebrow">CONTACT</p><h2>Build the next mission capability.</h2><p>For research, integration, teaming, and program inquiries, contact Cognitive Vehicles LLC.</p></div><div class="contact-panel"><p class="contact-kicker">Cognitive Vehicles LLC</p><p>San Clemente, California</p><p>Autonomous Systems · Undersea Robotics · Mission Systems</p><a class="button primary" href="mailto:cognitivevehicles@gmail.com">cognitivevehicles@gmail.com</a></div></section>
-</main><footer><div><strong>Cognitive Vehicles LLC</strong><span>SIMPLR-AUV</span></div><div>© <span id="year"></span> Cognitive Vehicles LLC. All rights reserved.</div></footer><script src="script.js"></script></body></html>
+<section class="hero">
+  <div class="hero-grid"></div><div class="hero-glow"></div>
+  <div class="hero-copy">
+    <p class="eyebrow">SOFTWARE-DEFINED UNDERWATER CAPABILITY</p>
+    <h1>SIMPLR-AUV</h1>
+    <h2 class="hero-kicker">Autonomous. Adaptable. Mission-Driven.</h2>
+    <p class="hero-lede">SIMPLR-AUV is a modular autonomous underwater vehicle and mission system built around reconfigurable hardware, deterministic mission orchestration, pre-deployment simulation, and an integrated browser-delivered operations environment.</p>
+    <div class="hero-actions"><a class="button primary" href="#mission-system">Explore the System</a><a class="button ghost" href="#technology">Our Approach</a></div>
+  </div>
+  <div class="hero-visual"><img src="simplr-vehicle.png" fetchpriority="high" alt="SIMPLR-AUV exterior render"></div>
+</section>
+
+<section class="principles" aria-label="Core design principles">
+  <article><strong>Modular</strong><span>Reconfigurable platform and interchangeable mission payloads</span></article>
+  <article><strong>Adaptive</strong><span>GIZMO mission orchestration and dynamic task selection</span></article>
+  <article><strong>Mission-Driven</strong><span>From intent to execution, evidence, and analysis</span></article>
+  <article><strong>Open Architecture</strong><span>Replaceable hardware and software capabilities</span></article>
+  <article><strong>Real-World Focus</strong><span>Engineering claims tied to explicit maturity and test evidence</span></article>
+</section>
+
+<section class="section mission-system" id="mission-system">
+  <div class="section-intro"><p class="eyebrow">A COMPLETE AUTONOMOUS MISSION SYSTEM</p><h2>Mission Intent to Underwater Impact</h2><p>Cognitive Vehicles integrates mission planning, vehicle configuration, simulation, autonomous execution, and post-mission analysis into one coherent system. SIMPLR-AUV is the first vehicle architecture built around that approach.</p></div>
+  <div class="mission-flow">
+    <div><b>01</b><strong>Plan</strong><span>Define mission objectives and geometry</span></div><i>→</i>
+    <div><b>02</b><strong>Configure</strong><span>COMPILR selects a feasible configuration</span></div><i>→</i>
+    <div><b>03</b><strong>Validate</strong><span>Exercise the actual autonomy stack in simulation</span></div><i>→</i>
+    <div><b>04</b><strong>Deploy</strong><span>Execute with SIMPLR-AUV</span></div><i>→</i>
+    <div><b>05</b><strong>Adapt</strong><span>GIZMO orchestrates mission behavior</span></div><i>→</i>
+    <div><b>06</b><strong>Analyze</strong><span>Turn mission data into engineering evidence</span></div>
+  </div>
+</section>
+
+<section class="section platform" id="simplr">
+  <div class="platform-copy"><p class="eyebrow">THE SIMPLR-AUV PLATFORM</p><h2>Modular. Capable. Built for the Mission.</h2><p>SIMPLR-AUV uses a free-flooding outer hull around two watertight electronics cylinders with a wet-mounted, pressure-tolerant energy module. The architecture separates mission sensing, vehicle management, payloads, and energy while preserving common power, network, and mechanical interfaces.</p>
+    <ul class="checklist"><li>Two-WTC vehicle architecture</li><li>Wet-mounted pressure-tolerant energy module</li><li>Interchangeable mission payload interfaces</li><li>Designed for rapid reconfiguration</li><li>Low-complexity, software-defined capability</li></ul>
+  </div>
+  <div class="platform-visual"><img src="xray.webp" loading="lazy" alt="Transparent SIMPL-AUV engineering render showing internal architecture"></div>
+</section>
+
+<section class="stats-strip" aria-label="SIMPLR-AUV design targets">
+  <div><strong>~80 in</strong><span>Length</span></div><div><strong>~10 in</strong><span>Diameter</span></div><div><strong>50–60 m</strong><span>Design depth</span></div><div><strong>24+ h</strong><span>Endurance target</span></div><div><strong>1.5+ m/s</strong><span>Nominal speed target</span></div>
+</section>
+
+<section class="section split" id="gizmo">
+  <div><p class="eyebrow">GIZMO MISSION ORCHESTRATION</p><h2>Mission intent becomes adaptive behavior.</h2><p>GIZMO evaluates mission objectives, operating zones, vehicle state, observations, and available capabilities to determine what the vehicle should do next. Its mission logic is deterministic, auditable, and subordinate to independent vehicle-safety functions.</p><div class="pill-row"><span>Deterministic</span><span>Explainable</span><span>Bounded</span><span>Replayable</span></div></div>
+  <div class="dark-card"><img src="gizmo-logo.png" loading="lazy" alt="GIZMO mission orchestration logo"></div>
+</section>
+
+<section class="section split reverse" id="compilr">
+  <div class="screenshot-frame"><img src="config-compiler.webp" loading="lazy" alt="COMPILR configuration compiler simulation interface"></div>
+  <div><p class="eyebrow">COMPILR CONFIGURATION COMPILER</p><h2>Mission intent becomes a validated vehicle definition.</h2><p>COMPILR evaluates mission objectives and hard constraints, screens candidate configurations, solves mass and trim properties, ranks feasible options, and validates the selected configuration through the same simulation environment used by the autonomy stack.</p><p class="note">The public site describes COMPILR's function and engineering role without exposing its internal scoring, implementation details, or private source.</p></div>
+</section>
+
+<section class="section systems" id="systems">
+  <div class="section-intro"><p class="eyebrow">MISSION SYSTEMS IN ACTION</p><h2>One environment from planning through analysis.</h2><p>The operator-facing suite is browser delivered, role segmented, and built around the same mission vocabulary used by the vehicle.</p></div>
+  <div class="systems-grid">
+    <figure><img src="portal.webp" loading="lazy" alt="SIMPLR mission portal showing mission applications"><figcaption><strong>Mission Portal</strong><span>Integrated mission environment</span></figcaption></figure>
+    <figure><img src="mission-planner.webp" loading="lazy" alt="Mission planning map with mission geometry"><figcaption><strong>Mission Planner</strong><span>Define objectives and mission geometry</span></figcaption></figure>
+    <figure><img src="gcs.webp" loading="lazy" alt="Ground Control Station monitoring SIMPLR-AUV"><figcaption><strong>Ground Control Station</strong><span>Real-time vehicle state and mission monitoring</span></figcaption></figure>
+    <figure><img src="config-compiler.webp" loading="lazy" alt="Configuration Compiler simulation view"><figcaption><strong>Configuration Compiler</strong><span>Mission-to-vehicle configuration and validation</span></figcaption></figure>
+  </div>
+</section>
+
+<section class="section technology" id="technology">
+  <div class="section-intro"><p class="eyebrow">OPEN SYSTEMS ENGINEERING</p><h2>Capability should be replaceable without rebuilding the vehicle.</h2><p>SIMPLR separates mission orchestration, guidance, navigation and control, hardware abstraction, payload services, and cloud operations so each layer can evolve independently.</p></div>
+  <div class="tech-grid">
+    <article><span>01</span><h3>Mission Layer</h3><p>Objectives, operating zones, policy, and GIZMO orchestration.</p></article>
+    <article><span>02</span><h3>Behavior Layer</h3><p>Guidance plugins and mission tasks with bounded completion logic.</p></article>
+    <article><span>03</span><h3>Vehicle Layer</h3><p>Navigation, control, obstacle avoidance, and independent safety functions.</p></article>
+    <article><span>04</span><h3>Platform Layer</h3><p>Hardware abstraction, vehicle sensors, actuators, and common interfaces.</p></article>
+    <article><span>05</span><h3>Payload Layer</h3><p>Interchangeable acoustic, optical, environmental, and future mission payloads.</p></article>
+    <article><span>06</span><h3>Simulation Layer</h3><p>The production autonomy stack runs against simulation or physical hardware through the same abstraction boundary.</p></article>
+  </div>
+</section>
+
+<section class="status-band"><div><p class="eyebrow">DEVELOPMENT STATUS</p><h2>Software-first, evidence-driven development.</h2></div><p>The autonomy stack, GIZMO, browser mission environment, and configuration tooling are being developed and exercised through simulation and hardware-in-the-loop workflows. Prototype vehicle hardware is in development; vehicle-level performance claims remain targets until controlled physical testing is complete.</p></section>
+
+<section class="section company" id="company"><div><p class="eyebrow">ABOUT COGNITIVE VEHICLES</p><h2>Autonomous systems built around mission reasoning.</h2></div><div><p>Cognitive Vehicles LLC develops autonomous vehicle architectures, mission software, modular payload integration, simulation, and undersea robotic systems. SIMPLR-AUV is the company's principal development platform for mission-defined autonomy and rapidly reconfigurable underwater capability.</p></div></section>
+
+<section class="cta" id="contact"><p class="eyebrow">A MORE KNOWLEDGEABLE OCEAN</p><h2>Build the next mission capability.</h2><p>For research, integration, teaming, and program inquiries, contact Cognitive Vehicles LLC.</p><a class="button primary" href="mailto:cognitivevehicles@gmail.com">cognitivevehicles@gmail.com</a></section>
+</main>
+
+<footer><div><strong>Cognitive Vehicles LLC</strong><span>San Clemente, California</span></div><div>© <span id="year"></span> Cognitive Vehicles LLC. All rights reserved.</div></footer>
+<script src="script.js"></script>
+</body>
+</html>
