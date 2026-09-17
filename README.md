@@ -36,9 +36,9 @@ The cloud suite is delivered as self-contained browser applications — no softw
 **Intelligence & Analysis**
 
 - **Log Analyzer** — post-mission telemetry visualization with dedicated obstacle-avoidance performance analysis and vehicle flight track overlay pulled directly from the avionics Pi
-- **Signal Analysis** — post-mission SIGINT accuracy assessment: overlays detected emitter positions on a map, evaluates geolocation error against ground truth, and scores RF parameter accuracy (frequency, SNR) and classification performance across all signals collected during the mission
+- **Signal Analysis** — post-mission SURVEY accuracy assessment: overlays detected emitter positions on a map, evaluates geolocation error against ground truth, and scores RF parameter accuracy (frequency, SNR) and classification performance across all signals collected during the mission
 - **Technique Generator** — Claude AI-powered click-to-analyze workflow for non-specialist ISR operators
-- **Technique Playbook** — browse and execute stored SIGINT exploitation technique library
+- **Technique Playbook** — browse and execute stored SURVEY exploitation technique library
 
 ### Layer 2 — Sensor Processing (`jetson/`)
 
@@ -122,11 +122,11 @@ Each processor directory is self-contained — its files are deployed to the cor
 
 ## Status
 
-**Software:** Full autonomy stack operational. End-to-end simulation missions demonstrated, including a Link16 ISR mission completed end-to-end on the actual Jetson hardware.
+**Software:** Full autonomy stack operational. End-to-end simulation missions demonstrated, including a FHSS ISR mission completed end-to-end on the actual Jetson hardware.
 
 **Vehicle:** Mechanical design near-complete. Hardware integration pending. The hardware abstraction layer has been built specifically to allow the autonomy software to run identically against simulation or physical hardware, with sensor-detection fallback to simulation when physical hardware is absent.
 
-**Cloud Operations Suite:** Operational. The Mission Portal, Mission Planner, Log Analyzer, and Signal Analysis tools have all been used to plan, execute, and analyze simulation missions, including end-to-end Link16 ISR missions.
+**Cloud Operations Suite:** Operational. The Mission Portal, Mission Planner, Log Analyzer, and Signal Analysis tools have all been used to plan, execute, and analyze simulation missions, including end-to-end FHSS ISR missions.
 
 ---
 
