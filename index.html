@@ -22,7 +22,7 @@
   <a class="brand" href="#top" aria-label="Cognitive Vehicles LLC home"><img src="cognitive-vehicles-logo.webp" alt="Cognitive Vehicles LLC"></a>
   <button class="nav-toggle" aria-expanded="false" aria-label="Toggle navigation">Menu</button>
   <nav class="nav">
-    <a href="#reconnaissance">Reconnaissance</a><a href="#simplr">SIMPLR-AUV</a><a href="#gizmo">GIZMO</a><a href="#compilr">COMPILR</a><a href="#systems">Mission Systems</a><a href="#company">Company</a><a class="nav-cta" href="#contact">Contact</a>
+    <a href="#reconnaissance">Reconnaissance</a><a href="#force">Force Assessment</a><a href="#simplr">SIMPLR-AUV</a><a href="#gizmo">GIZMO</a><a href="#compilr">COMPILR</a><a href="#simworld">Simulated World</a><a href="#systems">Operator Stations</a><a href="#company">Company</a><a class="nav-cta" href="#contact">Contact</a>
   </nav>
 </header>
 
@@ -50,7 +50,7 @@
 <section class="section mission-system" id="mission-system">
   <div class="section-intro"><p class="eyebrow">A COMPLETE AUTONOMOUS MISSION SYSTEM</p><h2>Mission Intent to Underwater Impact</h2><p>Cognitive Vehicles integrates mission planning, vehicle configuration, simulation, autonomous execution, and post-mission analysis into one coherent system. SIMPLR-AUV is the first vehicle architecture built around that approach.</p></div>
   <div class="mission-flow">
-    <div><b>01</b><strong>Plan</strong><span>Define mission objectives and geometry</span></div><i>→</i>
+    <div><b>01</b><strong>Plan</strong><span>COMPOSR turns tasking into a mission plan</span></div><i>→</i>
     <div><b>02</b><strong>Configure</strong><span>COMPILR selects a feasible configuration</span></div><i>→</i>
     <div><b>03</b><strong>Validate</strong><span>Exercise the actual autonomy stack in simulation</span></div><i>→</i>
     <div><b>04</b><strong>Deploy</strong><span>Execute with SIMPLR-AUV</span></div><i>→</i>
@@ -60,8 +60,8 @@
 </section>
 
 <section class="section platform" id="simplr">
-  <div class="platform-copy"><p class="eyebrow">THE SIMPLR-AUV PLATFORM</p><h2>Modular. Capable. Built for the Mission.</h2><p>SIMPLR-AUV uses a free-flooding outer hull around two watertight electronics cylinders with a wet-mounted, pressure-tolerant energy module. The architecture separates mission sensing, vehicle management, payloads, and energy while preserving common power, network, and mechanical interfaces.</p>
-    <ul class="checklist"><li>Two-WTC vehicle architecture</li><li>Wet-mounted pressure-tolerant energy module</li><li>Interchangeable mission payload interfaces</li><li>Designed for rapid reconfiguration</li><li>Low-complexity, software-defined capability</li></ul>
+  <div class="platform-copy"><p class="eyebrow">THE SIMPLR-AUV PLATFORM</p><h2>Low Cost. Attritable. Built for the Mission.</h2><p>SIMPLR-AUV is built to be sent where crewed platforms should not go. Its outer hull is 3-D printed and its electronics, sensors, and energy are commercial off-the-shelf, so vehicles can be built quickly, fielded in numbers, and risked on the mission rather than protected from it.</p><p>A free-flooding outer hull carries two watertight electronics cylinders and a wet-mounted, pressure-tolerant energy module, with common power, network, and mechanical interfaces between mission sensing, vehicle management, payloads, and energy.</p>
+    <ul class="checklist"><li>Low cost and attritable by design</li><li>Commercial off-the-shelf electronics and sensors</li><li>3-D printed outer hull</li><li>Interchangeable mission payload interfaces</li><li>Software-defined capability, rapidly reconfigured</li></ul>
   </div>
   <div class="platform-visual"><img src="xray.webp" loading="lazy" alt="Transparent SIMPL-AUV engineering render showing internal architecture"></div>
 </section>
@@ -76,9 +76,9 @@
   <div class="platform-visual" style="margin-top:40px"><img src="simplr-ov1.png" loading="lazy" alt="SIMPLR-AUV operational view: multi-domain ISR with passive RF survey, underwater optical surveillance, acoustic mesh coordination, and surfaced product offload"></div>
 
   <div class="tech-grid" style="margin-top:44px">
-    <article><span>RF</span><h3>Passive RF Survey</h3><p>Detect, identify, and geolocate emitters from a single platform — receive-only, antenna awash. Communications nets mapped; nothing radiated during collection.</p></article>
-    <article><span>ACOUSTIC</span><h3>Acoustic Signatures</h3><p>A rapidly reconfigurable payload module passively profiles machinery and propulsion noise — including the low-signature semi-submersibles and narco-submarines that evade other sensors.</p></article>
-    <article><span>VIDEO</span><h3>Underwater Video</h3><p>Optical classification of hulls and seabed objects at close range, delivering visual confirmation to pair with the RF and acoustic picture.</p></article>
+    <article><span>RF</span><h3>Passive RF Reconnaissance</h3><p>Detects, identifies, and geolocates the radios, networks, and links at an objective from a single platform — receive-only, antenna awash, nothing radiated. Communications nets are mapped, their users counted, and the site's outside connections found.</p></article>
+    <article><span>ACOUSTIC</span><h3>Acoustic and Sonar</h3><p>Listens for running machinery and propulsion — including the low-signature semi-submersibles and narco-submarines that evade other sensors — and closes on what it hears with sonar to find, measure, and map the vessel and the structures around it.</p></article>
+    <article><span>VIDEO</span><h3>Underwater Video</h3><p>Closes on the vessel the sonar has found and images it pass by pass at close range, delivering visual confirmation fused with the RF and acoustic picture.</p></article>
   </div>
 
   <div class="pill-row"><span>Deniable emplacement</span><span>Dormant until tasked</span><span>Zero emissions on survey</span><span>Operator-designated targets</span><span>Exfil over WiFi / LTE</span></div>
@@ -87,6 +87,21 @@
     <img src="reconnaissance-scene.png" loading="lazy" alt="SIMPLR-AUV operating in a riverine channel beside a concealed semi-submersible staging site" style="display:block;width:100%;aspect-ratio:16/9;object-fit:cover">
     <figcaption style="padding:16px 20px;color:var(--muted);font-size:.8rem;font-family:'IBM Plex Mono',monospace;letter-spacing:.04em">LITTORAL COLLECTION — REPRESENTATIVE SCENARIO</figcaption>
   </figure>
+</section>
+
+<section class="section platform" id="force">
+  <div class="section-intro"><p class="eyebrow">FORCE ASSESSMENT</p><h2>Know who is there before you go in.</h2><p>SIMPLR-AUV turns a reconnaissance sortie into an assessment the team can act on: how many are at the objective, how they are organized, where they were, what warning they have, and how they can call for help — delivered with the crew still well outside the threat ring.</p></div>
+
+  <div class="tech-grid" style="margin-top:44px">
+    <article><span>WHO</span><h3>Personnel on the Net</h3><p>Identifies and counts the individual radio users at the objective, each tracked over the course of the sortie.</p></article>
+    <article><span>ORGANIZATION</span><h3>Command Structure</h3><p>Separates the networks they talk on, revealing how the group is organized and the infrastructure that ties it together.</p></article>
+    <article><span>WHERE</span><h3>Positions Over Time</h3><p>Shows where each user was each time they were heard, so posts, patrols, and movement stand out on the map.</p></article>
+    <article><span>WARNING</span><h3>Early Warning</h3><p>Locates remote sensors and alarms guarding the approaches, so the team knows what will see them coming.</p></article>
+    <article><span>REACH-BACK</span><h3>Outside Connections</h3><p>Finds the satellite and network links the site uses to report out or call for reinforcement.</p></article>
+    <article><span>TARGET</span><h3>The Vessel Itself</h3><p>Locates and images the vessel or object of interest, fused with everything heard around it into one product.</p></article>
+  </div>
+
+  <div class="pill-row"><span>Personnel counted</span><span>Nets separated</span><span>Positions over time</span><span>Early warning found</span><span>States what it cannot see</span></div>
 </section>
 
 <section class="stats-strip" aria-label="Representative demonstration results">
@@ -103,8 +118,28 @@
   <div><p class="eyebrow">COMPILR CONFIGURATION COMPILER</p><h2>Mission intent becomes a validated vehicle definition.</h2><p>COMPILR evaluates mission objectives and hard constraints, screens candidate configurations, solves mass and trim properties, ranks feasible options, and validates the selected configuration through the same simulation environment used by the autonomy stack.</p><p class="note">The public site describes COMPILR's function and engineering role without exposing its internal scoring, implementation details, or private source.</p></div>
 </section>
 
+<section class="section technology" id="simworld">
+  <div class="section-intro"><p class="eyebrow">THE SIMULATED WORLD</p><h2>Every mission flown before it is launched.</h2><p>SIMPLR-AUV comes with a complete simulated world. The vehicle's own flight software runs unchanged against it — the same code that goes in the water — fed sensor data so faithful the vehicle cannot tell the simulation from the sea. Missions are rehearsed, stressed, and scored against ground truth before a vehicle ever gets wet.</p></div>
+  <div class="tech-grid">
+    <article><span>TERRAIN</span><h3>Real Charts and Depths</h3><p>Missions are built and flown over real nautical charts and seafloor depth data for the area of operations.</p></article>
+    <article><span>SIGNALS</span><h3>A Living RF Environment</h3><p>Radios, networks, sensors, and satellite links on the air the way a real site would put them there — for the vehicle to find.</p></article>
+    <article><span>SEA</span><h3>Acoustics, Sonar, and Video</h3><p>Machinery noise, sonar returns from vessels and piers, and camera imagery, all from the vehicle's true position.</p></article>
+    <article><span>VEHICLE</span><h3>Navigation and Faults</h3><p>Navigation sensors, GPS loss, sensor failures, and communications outages injected on purpose to prove the vehicle copes.</p></article>
+    <article><span>CAMPAIGNS</span><h3>Scored Against Truth</h3><p>Randomized scenarios run by the dozen, every result scored against what was really there — evidence, not anecdotes.</p></article>
+    <article><span>OPERATORS</span><h3>Train as You Fight</h3><p>Operators plan, monitor, and analyze simulated missions on the same stations they use for real ones.</p></article>
+  </div>
+</section>
+
 <section class="section systems" id="systems">
-  <div class="section-intro"><p class="eyebrow">MISSION SYSTEMS IN ACTION</p><h2>One environment from planning through analysis.</h2><p>The operator-facing suite is browser delivered, role segmented, and built around the same mission vocabulary used by the vehicle.</p></div>
+  <div class="section-intro"><p class="eyebrow">ROLE-BASED OPERATOR STATIONS</p><h2>One environment from tasking through analysis.</h2><p>The operator suite is browser delivered and organized by role, each station speaking the same mission vocabulary as the vehicle. From the tasking order to the finished assessment, every step has its station.</p></div>
+  <div class="tech-grid" style="margin-bottom:40px">
+    <article><span>TASKING</span><h3>COMPOSR</h3><p>Turns a tasking order into a complete mission plan over real charts — where to search, where to listen, how to get there and back — and says plainly what it can and cannot do.</p></article>
+    <article><span>PLANNING</span><h3>Mission Planner</h3><p>The mission planner's station: review and shape objectives, routes, communications, and investigations before launch.</p></article>
+    <article><span>CONFIGURATION</span><h3>COMPILR</h3><p>Turns the mission into a validated vehicle: the right payloads, mass, and trim for the job, proven in simulation.</p></article>
+    <article><span>OPERATIONS</span><h3>Ground Control Station</h3><p>The vehicle operator's station: live state, mission progress, and approvals when the vehicle asks.</p></article>
+    <article><span>EXPLOITATION</span><h3>Analysis Stations</h3><p>The analyst's stations: signal analysis, sonar and video review, and the fused product with its force assessment.</p></article>
+    <article><span>ENGINEERING</span><h3>Mission Evidence</h3><p>Every sortie logged and replayable, so performance is measured, not asserted.</p></article>
+  </div>
   <div class="systems-grid">
     <figure><img src="portal.webp" loading="lazy" alt="SIMPLR mission portal showing mission applications"><figcaption><strong>Mission Portal</strong><span>Integrated mission environment</span></figcaption></figure>
     <figure><img src="mission-planner.webp" loading="lazy" alt="Mission planning map with mission geometry"><figcaption><strong>Mission Planner</strong><span>Define objectives and mission geometry</span></figcaption></figure>
