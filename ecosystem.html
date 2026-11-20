@@ -1,0 +1,101 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="description" content="The Cognitive Vehicles ecosystem: MAESTRO tasking, COMPOSR mission planning, COMPILR vehicle configuration, GIZMO onboard autonomy, a complete simulated world, and browser-based operator stations, shared by every vehicle in every domain.">
+<meta name="theme-color" content="#06131f">
+<link rel="icon" type="image/webp" href="cognitive-vehicles-mark.webp">
+<meta property="og:type" content="website">
+<meta property="og:title" content="The Ecosystem | Cognitive Vehicles">
+<meta property="og:description" content="Tasking, planning, configuration, autonomy and simulation, shared by every vehicle in every domain.">
+<meta property="og:image" content="orbitr-processor.webp">
+<meta property="og:url" content="https://simplr-auv.com/ecosystem.html">
+<title>The Ecosystem | Cognitive Vehicles</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500;600&family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<header class="site-header">
+  <a class="brand" href="index.html" aria-label="Cognitive Vehicles LLC home"><img src="cognitive-vehicles-logo.webp" alt="Cognitive Vehicles LLC"></a>
+  <button class="nav-toggle" aria-expanded="false" aria-label="Toggle navigation">Menu</button>
+  <nav class="nav"><a href="index.html">Home</a><a href="ecosystem.html" aria-current="page">Ecosystem</a><a href="simplr-auv.html">SIMPLR-AUV</a><a href="orbitr.html">ORBITR</a><a href="index.html#company">Company</a><a class="nav-cta" href="index.html#contact">Contact</a></nav>
+</header>
+
+<main id="top">
+<section class="section mission-system" id="mission-system" style="border-top:0;padding-top:80px">
+  <div class="section-intro"><p class="eyebrow">THE COGNITIVE VEHICLES ECOSYSTEM</p><h2>From a commander's order to an outcome.</h2><p>One set of products tasks, plans, configures, validates, flies and reports for every vehicle, in every domain. The vehicles change; the ecosystem stays the same.</p></div>
+  <div class="mission-flow">
+    <div><b>01</b><strong>Task</strong><span>MAESTRO turns a commander's order into assignments</span></div><i>→</i>
+    <div><b>02</b><strong>Plan</strong><span>COMPOSR plans each mission on real geography</span></div><i>→</i>
+    <div><b>03</b><strong>Configure</strong><span>COMPILR builds the vehicle definition from a parts catalog</span></div><i>→</i>
+    <div><b>04</b><strong>Validate</strong><span>The real autonomy flies the mission in simulation first</span></div><i>→</i>
+    <div><b>05</b><strong>Adapt</strong><span>GIZMO decides on board what is worth a closer look</span></div><i>→</i>
+    <div><b>06</b><strong>Report</strong><span>Every sortie fused into one product for the command</span></div>
+  </div>
+</section>
+
+<section class="section split" id="maestro">
+  <div><p class="eyebrow">MAESTRO · COMMAND</p><h2>Ask for an outcome. The fleet works out who.</h2><p>MAESTRO turns a commander's tasking order into assignments across the fleet. It decides which vehicles take which objectives, splits the work, and records what no vehicle can do yet. Each unit offers what it can do and when; nothing launches without approval.</p><p>MAESTRO asks platforms for outcomes and never tells them how, so any vehicle in any domain can answer the same order.</p><div class="pill-row"><span>Outcome-based tasking</span><span>Approval before launch</span><span>Any domain</span><span>Gaps recorded</span></div></div>
+  <div class="tech-grid" style="grid-template-columns:1fr;margin-top:0">
+    <article style="min-height:0"><span>COMPOSR · PLANNING</span><h3 style="margin-top:14px">The mission composer</h3><p>Turns an assignment into a mission the vehicle can actually execute over real geography: route, sensor plan, communications plan, and when to stay silent. If the job cannot be done as asked, it says so and offers what can be done.</p></article>
+    <article style="min-height:0"><span>GROUND SYSTEM · OPERATIONS</span><h3 style="margin-top:14px">Cloud ground station</h3><p>Browser-delivered and role-based. Operators plan, command, monitor and analyze from anywhere, each seeing only what their role allows.</p></article>
+  </div>
+</section>
+
+<section class="section split" id="gizmo">
+  <div><p class="eyebrow">GIZMO · ONBOARD AUTONOMY</p><h2>Mission intent becomes adaptive behavior.</h2><p>GIZMO evaluates mission objectives, operating zones, vehicle state, observations, and available capabilities to determine what the vehicle should do next: notice something, decide whether it is worth a closer look, investigate, and resume. Its mission logic is deterministic, auditable, and subordinate to independent vehicle-safety functions, and every decision is recorded with its reason.</p><div class="pill-row"><span>Deterministic</span><span>Explainable</span><span>Bounded</span><span>Replayable</span></div></div>
+  <div class="dark-card"><img src="gizmo-logo.png" loading="lazy" alt="GIZMO mission orchestration logo"></div>
+</section>
+
+<section class="section split reverse" id="compilr">
+  <div><p class="eyebrow">COMPILR · CONFIGURATION</p><h2>Mission intent becomes a validated vehicle definition.</h2><p>COMPILR selects a vehicle configuration from a catalog of parts with known performance and validates it in the same simulation environment used by the autonomy stack. The result is a vehicle definition that has already flown the mission before it is built.</p></div>
+</section>
+
+<section class="section mission-system" id="digital-build">
+  <div class="section-intro"><p class="eyebrow">DIGITAL MANUFACTURING</p><h2>Built digitally, then for real.</h2><p>Every vehicle is built twice. First as a digital vehicle: assembled automatically from a library of components, weighed, and flown on its mission in simulation. Only a design that passes is released as a bill of materials, designed for units to build from kits of commercial parts, with harnesses that plug together and automated checkout. Losing a vehicle means building the next one from the same recipe.</p><p class="note">Digital manufacturing is in development. Building the 3-D model automatically from the chosen configuration is the centerpiece of ORBITR's first demonstration.</p>
+    <div class="pill-row"><span>Mission-defined</span><span>Assembled automatically</span><span>Flown before built</span><span>Kit-built by the unit</span><span>Measured data improves every recipe</span></div></div>
+  <div class="mission-flow">
+    <div><b>01</b><strong>Choose</strong><span>The mission picks parts with known performance</span></div><i>→</i>
+    <div><b>02</b><strong>Model</strong><span>A 3-D model is assembled from a component library</span></div><i>→</i>
+    <div><b>03</b><strong>Weigh</strong><span>Mass, balance and inertia come from the model</span></div><i>→</i>
+    <div><b>04</b><strong>Fly</strong><span>The digital vehicle flies its mission in simulation</span></div><i>→</i>
+    <div><b>05</b><strong>Release</strong><span>Only a design that passes becomes a bill of materials</span></div><i>→</i>
+    <div><b>06</b><strong>Build</strong><span>Units assemble from kits and check out every part</span></div>
+  </div>
+</section>
+
+<section class="section technology" id="simworld">
+  <div class="section-intro"><p class="eyebrow">THE SIMULATED WORLD</p><h2>Every mission flown before it is launched.</h2><p>Every vehicle comes with a complete simulated world. The vehicle's own flight software runs unchanged against it, fed sensor data from a separate simulation computer exactly as real sensors would deliver it. Missions are rehearsed, stressed, and scored against ground truth before a vehicle ever launches.</p></div>
+  <div class="tech-grid">
+    <article><span>BUILD</span><h3>Build the World, Then Fly It</h3><p>Any area of operations can be built from real charts and elevation data, then populated with the signals, vessels, and structures expected there. Missions are rehearsed in that exact world before deployment.</p></article>
+    <article><span>SIGNALS</span><h3>A Living RF Environment</h3><p>Radios, networks, sensors, and satellite links on the air as they would be in the real world, for the vehicle to find.</p></article>
+    <article><span>SENSORS</span><h3>Acoustics, Sonar, and Video</h3><p>Machinery noise, sonar returns from vessels and piers, and camera imagery, all from the vehicle's true position.</p></article>
+    <article><span>VEHICLE</span><h3>Navigation and Faults</h3><p>Navigation sensors, GPS loss, sensor failures, and communications outages injected on purpose to prove the vehicle copes.</p></article>
+    <article><span>TRADES</span><h3>Trade Studies Across Environments</h3><p>The same mission, or competing vehicle configurations, flown across many environments and conditions, every run scored against truth, so choices about payloads, tactics, and timelines rest on evidence before anything is built or deployed.</p></article>
+    <article><span>OPERATORS</span><h3>Train as You Fight</h3><p>Operators plan, monitor, and analyze simulated missions on the same stations they use for real ones.</p></article>
+  </div>
+</section>
+
+<section class="section systems" id="systems">
+  <div class="section-intro"><p class="eyebrow">ROLE-BASED OPERATOR STATIONS</p><h2>One environment from tasking through analysis.</h2><p>The operator suite is browser delivered and organized by role, each station speaking the same mission vocabulary as the vehicles. From the tasking order to the finished assessment, every step has its station.</p></div>
+  <div class="systems-grid">
+    <figure><img src="portal.webp" loading="lazy" alt="Mission portal showing mission applications"><figcaption><strong>Mission Portal</strong><span>Integrated mission environment</span></figcaption></figure>
+    <figure><img src="gcs.webp" loading="lazy" alt="Ground Control Station monitoring a vehicle"><figcaption><strong>Ground Control Station</strong><span>Real-time vehicle state and mission monitoring</span></figcaption></figure>
+  </div>
+</section>
+
+<section class="section technology" id="open">
+  <div class="section-intro"><p class="eyebrow">OPEN SYSTEMS ENGINEERING</p><h2>One processor, many vehicles.</h2><p>The software runs as containerized services on low-cost commercial computers and talks only through defined messages. A set of configuration messages decides which vehicle the processor becomes, so a new vehicle type is a new message set, not a new software program. The architecture follows the Department of War's Modular Open Systems Approach.</p></div>
+  <div class="figure-frame wide-figure"><img src="orbitr-processor.webp" loading="lazy" alt="One common processor running containerized services; an AUV message set makes it SIMPLR-AUV and an aircraft message set makes it ORBITR"></div>
+</section>
+
+<section class="cta" id="contact"><p class="eyebrow">ONE ECOSYSTEM · EVERY DOMAIN</p><h2>Build the next mission capability.</h2><p>For research, integration, teaming, and program inquiries, contact Cognitive Vehicles LLC.</p><a class="button primary" href="mailto:wayne@simplr-auv.com">wayne@simplr-auv.com</a><p class="note" style="margin:26px auto 0;max-width:520px;text-align:left">Wayne Folsom · Founder &amp; CEO<br>wayne@simplr-auv.com · (949) 326-4252</p></section>
+</main>
+
+<footer style="align-items:center"><div><strong>Cognitive Vehicles LLC</strong><span>San Clemente, California</span></div><div style="max-width:440px;font-size:.72rem;color:#c1d0d6;line-height:1.4">Technical data for SIMPLR-AUV and ORBITR is export-controlled under the ITAR (22 CFR 120-130) and is released only to U.S. persons. Briefings available on request.</div><div>© <span id="year"></span> Cognitive Vehicles LLC. All rights reserved.</div></footer>
+<script src="script.js"></script>
+</body>
+</html>
