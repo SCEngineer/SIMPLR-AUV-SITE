@@ -1,0 +1,82 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 640" role="img" aria-labelledby="t d">
+  <title id="t">COMPILR concept</title>
+  <desc id="d">Mission intent and a parts catalog produce candidate configurations; each is flown in simulation; only a passing design becomes a validated vehicle definition.</desc>
+  <defs>
+    <marker id="a" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="8" markerHeight="8" orient="auto-start-reverse">
+      <path d="M0 0L10 5L0 10z" fill="#4FD1D9"/>
+    </marker>
+    <pattern id="g" width="40" height="40" patternUnits="userSpaceOnUse">
+      <path d="M40 0H0V40" fill="none" stroke="#0f2433" stroke-width="1"/>
+    </pattern>
+  </defs>
+  <style>
+    .m{font-family:'IBM Plex Mono',Consolas,'Courier New',monospace}
+    .s{font-family:Inter,'Segoe UI',Arial,sans-serif}
+    .box{fill:#0a1a26;stroke:#4FD1D9;stroke-width:2}
+    .obox{fill:#0a1a26;stroke:#FF9F1C;stroke-width:2}
+    .eb{font-size:13px;letter-spacing:2.5px;fill:#FF9F1C}
+    .ec{font-size:13px;letter-spacing:2.5px;fill:#4FD1D9}
+    .h{font-size:24px;font-weight:700;fill:#EAF2F6}
+    .b{font-size:15px;fill:#9FB4C0}
+    .n{font-size:15px;font-weight:700;fill:#06131f}
+    .ln{stroke:#4FD1D9;stroke-width:2.5;fill:none}
+  </style>
+
+  <rect width="800" height="640" fill="#06131f"/>
+  <rect width="800" height="640" fill="url(#g)"/>
+
+  <!-- 1 mission intent -->
+  <rect class="obox" x="40" y="40" width="320" height="150" rx="4"/>
+  <circle cx="70" cy="70" r="14" fill="#FF9F1C"/><text class="m n" x="70" y="75" text-anchor="middle">1</text>
+  <text class="m eb" x="94" y="75">MISSION INTENT</text>
+  <text class="s h" x="64" y="122">The order</text>
+  <text class="m b" x="64" y="152">area · payload · deadline</text>
+  <text class="m b" x="64" y="174">hard constraints</text>
+
+  <!-- 2 parts catalog -->
+  <rect class="box" x="452" y="58" width="300" height="132" rx="4" opacity=".35"/>
+  <rect class="box" x="446" y="49" width="300" height="141" rx="4" opacity=".6"/>
+  <rect class="box" x="440" y="40" width="320" height="150" rx="4"/>
+  <circle cx="470" cy="70" r="14" fill="#4FD1D9"/><text class="m n" x="470" y="75" text-anchor="middle">2</text>
+  <text class="m ec" x="494" y="75">PARTS CATALOG</text>
+  <text class="s h" x="464" y="122">Known performance</text>
+  <text class="m b" x="464" y="152">hull · payload · energy</text>
+  <text class="m b" x="464" y="174">propulsion · compute</text>
+
+  <path class="ln" d="M360 115H432" marker-end="url(#a)"/>
+  <path class="ln" d="M600 190V242" marker-end="url(#a)"/>
+
+  <!-- 3 candidates -->
+  <rect class="box" x="440" y="250" width="320" height="150" rx="4"/>
+  <circle cx="470" cy="280" r="14" fill="#4FD1D9"/><text class="m n" x="470" y="285" text-anchor="middle">3</text>
+  <text class="m ec" x="494" y="285">CANDIDATES</text>
+  <text class="s h" x="464" y="332">Feasible designs</text>
+  <g transform="translate(464 352)">
+    <rect width="78" height="30" rx="3" fill="#0f2a38" stroke="#4FD1D9"/>
+    <rect x="94" width="78" height="30" rx="3" fill="#0f2a38" stroke="#4FD1D9"/>
+    <rect x="188" width="78" height="30" rx="3" fill="#0f2a38" stroke="#4FD1D9"/>
+    <text class="m b" x="39" y="20" text-anchor="middle">A</text>
+    <text class="m b" x="133" y="20" text-anchor="middle">B</text>
+    <text class="m b" x="227" y="20" text-anchor="middle">C</text>
+  </g>
+
+  <path class="ln" d="M440 325H368" marker-end="url(#a)"/>
+
+  <!-- 4 flown in simulation -->
+  <rect class="box" x="40" y="250" width="320" height="150" rx="4"/>
+  <circle cx="70" cy="280" r="14" fill="#4FD1D9"/><text class="m n" x="70" y="285" text-anchor="middle">4</text>
+  <text class="m ec" x="94" y="285">FLOWN DIGITALLY</text>
+  <text class="s h" x="64" y="332">The real autonomy</text>
+  <text class="m b" x="64" y="358">flies the mission in</text>
+  <text class="m b" x="64" y="380">simulation first</text>
+  <path d="M250 384c18-30 30-10 46-38s30-14 44-42" fill="none" stroke="#4FD1D9" stroke-width="2" stroke-dasharray="5 5" opacity=".8"/>
+
+  <path class="ln" d="M200 400V452" marker-end="url(#a)"/>
+
+  <!-- 5 validated definition -->
+  <rect x="40" y="460" width="720" height="140" rx="4" fill="#0b2230" stroke="#4FD1D9" stroke-width="3"/>
+  <circle cx="70" cy="490" r="14" fill="#4FD1D9"/><text class="m n" x="70" y="495" text-anchor="middle">5</text>
+  <text class="m ec" x="94" y="495">RELEASED</text>
+  <text class="s h" x="64" y="545">Validated vehicle definition</text>
+  <text class="m b" x="64" y="575">bill of materials + configuration · only a design that passes</text>
+</svg>
